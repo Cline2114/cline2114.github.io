@@ -252,11 +252,13 @@
     const interval = setInterval(() => {
 
         if(progress < 80){
-            progress += Math.random() * 8;
+            progress += Math.random() * 10;
         } else if(progress < 95){
-            progress += Math.random() * 2;
+            progress += Math.random() * 3;
+		} else if(progress < 98){
+            progress += Math.random() * 0.3;
         } else {
-            progress += 0.3;
+            progress += 0.15;
         }
 
         if(progress >= 100){
